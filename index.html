@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Haniya Shuja - Professional CV</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f2f5;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
+            padding: 20px;
+        }
+        .cv-container {
+            background-color: #ffffff;
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            max-width: 900px;
+            margin: 20px auto;
+        }
+        @media (min-width: 768px) {
+            .cv-container {
+                flex-direction: row;
+            }
+        }
+        .left-panel {
+            background-color: #3b82f6; /* Blue background */
+            color: #ffffff;
+            padding: 30px;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            border-top-left-radius: 15px;
+            border-bottom-left-radius: 15px;
+        }
+        .right-panel {
+            background-color: #ffffff;
+            padding: 30px;
+            flex: 2;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            border-top-right-radius: 15px;
+            border-bottom-right-radius: 15px;
+        }
+        .section-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #1f2937; /* Dark gray for titles */
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .left-panel .section-title {
+            color: #ffffff;
+        }
+        .info-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 8px;
+        }
+        .info-item i {
+            color: #60a5fa; /* Lighter blue for icons */
+        }
+        .left-panel .info-item i {
+            color: #ffffff;
+        }
+        .skill-tag {
+            background-color: #e0f2fe; /* Light blue background for tags */
+            color: #1e40af; /* Darker blue text for tags */
+            padding: 6px 12px;
+            border-radius: 20px;
+            font-size: 0.875rem;
+            font-weight: 600;
+            margin-right: 8px;
+            margin-bottom: 8px;
+            display: inline-block;
+        }
+        .language-dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background-color: #60a5fa;
+            margin-left: 5px;
+        }
+        .language-dot.filled {
+            background-color: #3b82f6;
+        }
+        .language-level {
+            display: flex;
+            align-items: center;
+            margin-top: 5px;
+        }
+        .education-item, .certificate-item, .work-item {
+            margin-bottom: 20px;
+        }
+        .education-item h3, .certificate-item h3, .work-item h3 {
+            font-size: 1.125rem;
+            font-weight: 600;
+            color: #1f2937;
+        }
+        .education-item p, .certificate-item p, .work-item p {
+            color: #4b5563;
+            font-size: 0.95rem;
+        }
+        .work-item ul {
+            list-style-type: disc;
+            padding-left: 20px;
+            color: #4b5563;
+        }
+        .work-item li {
+            margin-bottom: 5px;
+            font-size: 0.95rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="cv-container">
+        <!-- Left Panel -->
+        <div class="left-panel">
+            <div class="text-center mb-6">
+                <h1 class="text-4xl font-bold mb-2">Haniya Shuja</h1>
+                <p class="text-lg font-light">Aspiring MERN Stack Developer</p>
+            </div>
+
+            <!-- Contact Info -->
+            <div class="mb-6">
+                <h2 class="text-xl font-semibold mb-4 flex items-center gap-2">
+                    <i class="fas fa-address-card"></i> Contact Info
+                </h2>
+                <div class="info-item">
+                    <i class="fas fa-envelope"></i> <span>haniya.shuja@email.com</span>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-phone"></i> <span>03482782608</span>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-map-marker-alt"></i> <span>Block 3H 4/12 Nazimabad, Karachi</span>
+                </div>
+                <div class="info-item">
+                    <i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/haniya-shuja-264b3525b/" target="_blank" class="text-white hover:underline">LinkedIn Profile</a>
+                </div>
+            </div>
+
+            <!-- Personal Details -->
+            <div class="mb-6">
+                <h2 class="text-xl font-semibold mb-4 flex items-center gap-2">
+                    <i class="fas fa-user"></i> Personal Details
+                </h2>
+                <div class="info-item">
+                    <span class="font-semibold">Father's Name:</span> Shuja-ud-din
+                </div>
+                <div class="info-item">
+                    <span class="font-semibold">NIC No:</span> 42401-3264-326-8
+                </div>
+                <div class="info-item">
+                    <span class="font-semibold">D.O.B:</span> 13-MAY-1996
+                </div>
+                <div class="info-item">
+                    <span class="font-semibold">Religion:</span> Islam
+                </div>
+                <div class="info-item">
+                    <span class="font-semibold">Domicile:</span> Karachi
+                </div>
+            </div>
+
+            <!-- Skills -->
+            <div class="mb-6">
+                <h2 class="text-xl font-semibold mb-4 flex items-center gap-2">
+                    <i class="fas fa-cogs"></i> Skills
+                </h2>
+                <div class="flex flex-wrap gap-2">
+                    <span class="skill-tag">HTML</span>
+                    <span class="skill-tag">CSS</span>
+                    <span class="skill-tag">JavaScript</span>
+                    <span class="skill-tag">React.js</span>
+                    <span class="skill-tag">Python</span>
+                    <span class="skill-tag">Node.js</span>
+                    <span class="skill-tag">Teamwork</span>
+                    <span class="skill-tag">Leadership</span>
+                    <span class="skill-tag">Problem Solving</span>
+                </div>
+            </div>
+
+            <!-- Languages -->
+            <div>
+                <h2 class="text-xl font-semibold mb-4 flex items-center gap-2">
+                    <i class="fas fa-language"></i> Languages
+                </h2>
+                <div class="mb-2">
+                    <span class="font-semibold">Urdu</span>
+                    <div class="language-level">
+                        <div class="language-dot filled"></div>
+                        <div class="language-dot filled"></div>
+                        <div class="language-dot filled"></div>
+                        <div class="language-dot filled"></div>
+                        <div class="language-dot"></div>
+                    </div>
+                </div>
+                <div>
+                    <span class="font-semibold">English</span>
+                    <div class="language-level">
+                        <div class="language-dot filled"></div>
+                        <div class="language-dot filled"></div>
+                        <div class="language-dot filled"></div>
+                        <div class="language-dot"></div>
+                        <div class="language-dot"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Right Panel -->
+        <div class="right-panel">
+            <!-- Summary -->
+            <div class="mb-6">
+                <h2 class="section-title">
+                    <i class="fas fa-user-tie"></i> Professional Summary
+                </h2>
+                <p class="text-gray-700 leading-relaxed">
+                    A highly motivated and ambitious individual with a strong desire to learn and develop professional skills in web development. Seeking an entry-level position where I can contribute effectively to a dynamic team, grow personally and professionally, and gain valuable experience in a supportive environment. Committed to delivering high-quality, innovative work and continuously improving my abilities to become a proficient MERN Stack Developer.
+                </p>
+            </div>
+
+            <!-- Work Experience -->
+            <div class="mb-6">
+                <h2 class="section-title">
+                    <i class="fas fa-briefcase"></i> Work Experience
+                </h2>
+                <div class="work-item">
+                    <h3 class="text-blue-600">Web Development Virtual Internship</h3>
+                    <p class="text-gray-600 font-semibold">CodSoft</p>
+                    <p class="text-gray-500 text-sm">2024</p>
+                    <ul class="list-disc pl-5 mt-2 text-gray-700">
+                        <li>Acquired foundational skills in HTML, CSS, and JavaScript, enabling the creation and styling of basic web pages with a focus on responsive design.</li>
+                        <li>Proficient in utilizing Git and GitHub for version control, efficiently managing code changes and collaborating on projects.</li>
+                        <li>Gained experience with modern front-end libraries like jQuery and Bootstrap, streamlining development and enhancing user interface functionality.</li>
+                        <li>Developed skills in DOM manipulation, basic API integration, and effective debugging techniques for robust web applications.</li>
+                        <li>Understood fundamental SEO principles, wireframing, and UI/UX design, contributing to the creation of user-friendly and accessible web experiences.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Education -->
+            <div class="mb-6">
+                <h2 class="section-title">
+                    <i class="fas fa-graduation-cap"></i> Education
+                </h2>
+                <div class="education-item">
+                    <h3 class="text-blue-600">Bachelor in Computer Science</h3>
+                    <p class="text-gray-600 font-semibold">Virtual University</p>
+                    <p class="text-gray-500 text-sm">Present</p>
+                </div>
+                <div class="education-item">
+                    <h3 class="text-blue-600">Intermediate in Medical Science</h3>
+                    <p class="text-gray-600 font-semibold">Board of Intermediate Education, Karachi</p>
+                    <p class="text-gray-500 text-sm">2014</p>
+                </div>
+                <div class="education-item">
+                    <h3 class="text-blue-600">Matriculation in Medical Science</h3>
+                    <p class="text-gray-600 font-semibold">ST. Lawrence Secondary School</p>
+                    <p class="text-gray-500 text-sm">2012</p>
+                </div>
+            </div>
+
+            <!-- Certificates -->
+            <div>
+                <h2 class="section-title">
+                    <i class="fas fa-certificate"></i> Certifications & Courses
+                </h2>
+                <div class="certificate-item">
+                    <h3 class="text-blue-600">MERN Stack Developer Certificate</h3>
+                    <p class="text-gray-600 font-semibold">Saylani Institute of Artificial Intelligence and Blockchain</p>
+                    <p class="text-gray-500 text-sm">Focused on building full-stack web applications using MongoDB, Express.js, React.js, and Node.js.</p>
+                </div>
+                <div class="certificate-item">
+                    <h3 class="text-blue-600">GIAIC Web Development and Metaverse 3.0 Course</h3>
+                    <p class="text-gray-600 font-semibold">Governor's Initiative for Artificial Intelligence and Blockchain</p>
+                    <p class="text-gray-500 text-sm">Explored advanced web development concepts and emerging technologies in the metaverse space.</p>
+                </div>
+                <div class="certificate-item">
+                    <h3 class="text-blue-600">Various Online Internship Certificates</h3>
+                    <p class="text-gray-600 font-semibold">CodSoft, TechnoHack, Internee, etc.</p>
+                    <p class="text-gray-500 text-sm">Gained practical experience and honed skills through diverse online internship platforms.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
